@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/spotify/search",
+      "dest": "/spsearch.js"
+    },
+    {
+      "src": "/spotify/down",
+      "dest": "/spdown.js"
+    },
+    {
+      "src": "/spotify/lyrics",
+      "dest": "/lyrics.py"
+    },
+    {
+      "src": "/spotify/track",
+      "dest": "/sptrack.js"
+    },
+    {
+      "src": "/song",
+      "dest": "/track.js"
+    }
+      
+  ]
+}

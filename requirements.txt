@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+uvicorn[standard]
+requests
+spotipy
+pydantic
